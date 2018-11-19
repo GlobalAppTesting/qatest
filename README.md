@@ -16,4 +16,3 @@ Prepare test automation script for Web-based application http://www.testerwork.c
 You have the freedom to choose language and framework (like Geb, Cucumber or RSpecs), however, note that developers write in RSpecs and Ruby.
 
 You can get extra points with packaging code into docker https://hub.docker.com/u/selenium/
-
