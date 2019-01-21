@@ -1,16 +1,18 @@
 To run tests please install
 
-gem install capybara
-gem install cucumber
-Gem install site_prism
-gem install selenium-webdriver
-Gem install pry
+`gem install capybara`
+`gem install cucumber`
+`gem install site_prism`
+`gem install selenium-webdriver`
+`gem install pry`
 
-Or use
+Or use:
 
 `bundle install`
 
-`brew install geckodriver` for mac osx to have firefox webdriver
+on mac OSX you can install geckodriver using homebrew:
 
-for all test just type cucumber in `console`
+`brew install geckodriver`
+
+for all test just type `cucumber` in console
 for scenarios only for CI like basic tests `cucumber --tags=@basic`
