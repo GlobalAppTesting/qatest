@@ -8,14 +8,12 @@ require 'capybara'
 require 'capybara/dsl'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
+require 'site_prism'
+require 'pry'
 
 $LOAD_PATH << './lib'
 
 require 'site_prism'
-
-# To prevent natural cucumber load order
-require_relative 'js_helper'
-require_relative 'sections/all'
 
 Capybara.register_driver :selenium do |app|
   browser = ENV.fetch('browser', 'firefox').to_sym
@@ -24,7 +22,12 @@ end
 
 Capybara.configure do |config|
   config.default_driver = :selenium
-  config.default_max_wait_time = 0.75
-  config.app_host = 'http://www.testerwork.com/'
+  config.default_max_wait_time = 2
   config.ignore_hidden_elements = false
+end
+
+After do |scenario|
+   if scenario.failed?
+     save_screenshot
+   end
 end

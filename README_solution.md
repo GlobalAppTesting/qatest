@@ -7,3 +7,5 @@ gem install selenium-webdriver
 Gem install pry
 
 Or use bundle install
+
+brew install geckodriver

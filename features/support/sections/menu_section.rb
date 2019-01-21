@@ -1,10 +1,5 @@
-require 'capybara'
-require 'capybara/cucumber'
-require 'selenium-webdriver'
 require 'site_prism'
 
 class MenuSection < SitePrism::Section
-  element :home, ''
-  element :sign_up, ''
-  element :login, ''
+  element :login_button, :xpath, '(//span[@class="item_text"][text()="LOGIN"])[2]'
 end
