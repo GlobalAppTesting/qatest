@@ -13,7 +13,7 @@ This test is described quite vaguely on purpose, so interpretation of it's expli
  
 Prepare test automation script for Web-based application http://www.testerwork.com/ for login feature and update your device list.
 
-You have the freedom to choose language and framework (like Geb, Cucumber or RSpecs), however, note that developers write in RSpecs and Ruby.
+You have the freedom to choose language and framework (like Geb, Cucumber or RSpecs).
 
 You can get extra points with packaging code into docker https://hub.docker.com/u/selenium/
 
