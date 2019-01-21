@@ -12,8 +12,24 @@ When /^I login to with incorrect credentials$/ do
   login.log_in_button.click
 end
 
+When /^I login to with correct credentials$/ do
+  login = LoginPage.new
+  login.email_input.set 'marek.majerski@gmail.com'
+  login.password_input.set 'Apple123'
+  login.log_in_button.click
+end
+
+Then(/^I land on Registration Page$/) do
+  reg = RegistrationPage.new
+  expect(reg).to be_displayed
+end
+
+Then /^I see all expected elements$/ do
+  login = LoginPage.new
+  expect(login.all_there?).to eq true
+end
+
 Then /^I see error message (.+)$/ do |error_message|
   login = LoginPage.new
-  puts login.error_message.text
   expect(login.error_message.text).to eq error_message
 end
