@@ -27,4 +27,4 @@ Feature: Login window on main page
   Scenario: Login with correct credentials
     Given I go to Login Page
     When I login to with correct credentials
-    Then I land on Registration Page
+    Then I land on Test Cycles Page

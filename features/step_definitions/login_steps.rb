@@ -19,9 +19,9 @@ When /^I login to with correct credentials$/ do
   login.log_in_button.click
 end
 
-Then(/^I land on Registration Page$/) do
-  reg = RegistrationPage.new
-  expect(reg).to be_displayed
+Then(/^I land on Test Cycles Page$/) do
+  test_cycles = TestCyclesPage.new
+  expect(test_cycles).to be_displayed
 end
 
 Then /^I see all expected elements$/ do
