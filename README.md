@@ -8,12 +8,10 @@
 
 ## 2) Test automation recruitment homework
 
-This test is not about solving a problem. It's about execution and checking what's your default way of thinking and coding habits.
-This test is described quite vaguely on purpose, so interpretation of it's explicit and implicit requirements is up to you.
- 
-Prepare test automation script for Web-based application https://tester-work-qa.gatserver.com/ for login feature and update your device list.
+This test is not about solving a particular problem. It's about execution and checking what's your default way of thinking and coding habits. This test is described quite vaguely on purpose, so interpretation of it's explicit and implicit requirements is up to you.
 
-You have the freedom to choose language and framework (like Geb, Cucumber or RSpecs).
+The task itself: prepare test automation script for Web-based application at https://tester-work-qa.gatserver.com/ for login feature and updating your device list. Keep in mind that this is a test environment, so it may occasionally be unavailable. 
 
-You can get extra points with packaging code into docker https://hub.docker.com/u/selenium/
+You have the freedom to choose language (like Python or Ruby) and framework (like pytest, Selenium, Geb, test-ng, RSpecs or Cucumber).
 
+You can get extra points for utilizing Docker for tests, see https://hub.docker.com/u/selenium/ for some starting points.
